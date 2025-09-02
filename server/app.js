@@ -7,7 +7,7 @@ var path = require('path'); // Node.js path module
 // Load top spots data from JSON file
 const myData = require('./data.json');
 
-// Route: GET /api/data
+
 // Returns the top spots data as raw JSON (API endpoint)
 app.get('/data', (req, res) => {
   res.json(myData);
@@ -27,4 +27,5 @@ app.get('/', (req, res) => {
 
 // Export the Express app instance for use in index.js
 module.exports = app;
+
 
