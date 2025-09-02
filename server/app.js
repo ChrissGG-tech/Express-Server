@@ -9,12 +9,6 @@ const myData = require('./data.json');
 
 // Route: GET /api/data
 // Returns the top spots data as raw JSON (API endpoint)
-app.get('/api/data', (req, res) => {
-  res.json(myData);
-});
-
-// Route: GET /data
-// Also returns the top spots data as raw JSON (alternative endpoint)
 app.get('/data', (req, res) => {
   res.json(myData);
 });
@@ -33,3 +27,4 @@ app.get('/', (req, res) => {
 
 // Export the Express app instance for use in index.js
 module.exports = app;
+
